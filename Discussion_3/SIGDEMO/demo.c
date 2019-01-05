@@ -10,16 +10,26 @@
 void
 do_nothing ()
 {
-  // I do nothing!
+  /* I do nothing! */
+}
+
+void
+print_hi ()
+{
+  printf ("Hi!\n");
 }
 
 int
 main (int argc, char *argv[])
 {
   // signal (SIGINT, do_nothing);
-  // signal (SIGQUIT, do_nothing);
-  // signal (SIGTERM, do_nothing);
-  // signal (SIGKILL, do_nothing);
+
+  // signal (SIGQUIT, print_hi);
+
+  // signal (SIGTERM, SIG_IGN);
+  // signal (SIGKILL, SIG_IGN);
+
+  // signal (SIGINT, SIG_DFL);
 
   while (1)
   {
