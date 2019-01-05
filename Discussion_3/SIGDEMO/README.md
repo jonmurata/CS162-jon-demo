@@ -104,6 +104,6 @@ Uncomment the line `signal (SIGINT, SIG_DFL);`.
 
 Compile with `make` and run `./demo` again. Notice that `CTRL-C` should now kill the program as it originally did.
 
-### Conclusion
+# Conclusion
 
 In this demo we learned about signal handling. In the C code, we redirected signals to custom handlers or to be ignored. Some can be redirected to new handler, and they can also can be reset to their default value. This is a powerful tool when handling interrupts, and it helps to gain a better understanding of how we can interact with our computers and terminals.
